@@ -5,9 +5,12 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   imports: [RouterOutlet],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
     <router-outlet />
+    <main class="main">
+      <div class="flex flex-col justify-center items-center p-16">
+          <h1 class="text-3xl underline text-amber-700 mt-10 hover:bg-fuchsia-600">Welcome to {{title}} with TailwindCss</h1>
+      </div>
+    </main>
   `,
   styles: [],
 })
